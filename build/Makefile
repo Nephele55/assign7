@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home1/student/stud113/s11344/oop_file/assign6
+CMAKE_SOURCE_DIR = /mnt/c/Users/ninno/code/mantou
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home1/student/stud113/s11344/oop_file/assign6/build
+CMAKE_BINARY_DIR = /mnt/c/Users/ninno/code/mantou/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home1/student/stud113/s11344/oop_file/assign6/build/CMakeFiles /home1/student/stud113/s11344/oop_file/assign6/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ninno/code/mantou/build/CMakeFiles /mnt/c/Users/ninno/code/mantou/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home1/student/stud113/s11344/oop_file/assign6/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ninno/code/mantou/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,30 +153,6 @@ src/AnsiPrint.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/src/AnsiPrint.cpp.s
 .PHONY : src/AnsiPrint.cpp.s
 
-src/RPSGameObject.o: src/RPSGameObject.cpp.o
-.PHONY : src/RPSGameObject.o
-
-# target to build an object file
-src/RPSGameObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/src/RPSGameObject.cpp.o
-.PHONY : src/RPSGameObject.cpp.o
-
-src/RPSGameObject.i: src/RPSGameObject.cpp.i
-.PHONY : src/RPSGameObject.i
-
-# target to preprocess a source file
-src/RPSGameObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/src/RPSGameObject.cpp.i
-.PHONY : src/RPSGameObject.cpp.i
-
-src/RPSGameObject.s: src/RPSGameObject.cpp.s
-.PHONY : src/RPSGameObject.s
-
-# target to generate assembly for a file
-src/RPSGameObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/src/RPSGameObject.cpp.s
-.PHONY : src/RPSGameObject.cpp.s
-
 src/controller.o: src/controller.cpp.o
 .PHONY : src/controller.o
 
@@ -200,6 +176,30 @@ src/controller.s: src/controller.cpp.s
 src/controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/src/controller.cpp.s
 .PHONY : src/controller.cpp.s
+
+src/food.o: src/food.cpp.o
+.PHONY : src/food.o
+
+# target to build an object file
+src/food.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/src/food.cpp.o
+.PHONY : src/food.cpp.o
+
+src/food.i: src/food.cpp.i
+.PHONY : src/food.i
+
+# target to preprocess a source file
+src/food.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/src/food.cpp.i
+.PHONY : src/food.cpp.i
+
+src/food.s: src/food.cpp.s
+.PHONY : src/food.s
+
+# target to generate assembly for a file
+src/food.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/src/food.cpp.s
+.PHONY : src/food.cpp.s
 
 src/gameObject.o: src/gameObject.cpp.o
 .PHONY : src/gameObject.o
@@ -321,6 +321,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/snake.o: src/snake.cpp.o
+.PHONY : src/snake.o
+
+# target to build an object file
+src/snake.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/src/snake.cpp.o
+.PHONY : src/snake.cpp.o
+
+src/snake.i: src/snake.cpp.i
+.PHONY : src/snake.i
+
+# target to preprocess a source file
+src/snake.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/src/snake.cpp.i
+.PHONY : src/snake.cpp.i
+
+src/snake.s: src/snake.cpp.s
+.PHONY : src/snake.s
+
+# target to generate assembly for a file
+src/snake.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/src/snake.cpp.s
+.PHONY : src/snake.cpp.s
+
 src/view.o: src/view.cpp.o
 .PHONY : src/view.o
 
@@ -357,12 +381,12 @@ help:
 	@echo "... src/AnsiPrint.o"
 	@echo "... src/AnsiPrint.i"
 	@echo "... src/AnsiPrint.s"
-	@echo "... src/RPSGameObject.o"
-	@echo "... src/RPSGameObject.i"
-	@echo "... src/RPSGameObject.s"
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"
+	@echo "... src/food.o"
+	@echo "... src/food.i"
+	@echo "... src/food.s"
 	@echo "... src/gameObject.o"
 	@echo "... src/gameObject.i"
 	@echo "... src/gameObject.s"
@@ -378,6 +402,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/snake.o"
+	@echo "... src/snake.i"
+	@echo "... src/snake.s"
 	@echo "... src/view.o"
 	@echo "... src/view.i"
 	@echo "... src/view.s"

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home1/student/stud113/s11344/oop_file/assign6/include
+CXX_INCLUDES = -I/mnt/c/Users/ninno/code/mantou/include
 
 CXX_FLAGS = -Wno-deprecated-declarations -std=gnu++17
 

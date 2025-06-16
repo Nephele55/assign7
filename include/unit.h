@@ -6,6 +6,9 @@ struct Vec2{
     int e2;
     int& x(){ return e1;}
     int& y(){ return e2;}
+    // Add const overloads for x() and y()
+    const int& x() const { return e1; } // Added const version
+    const int& y() const { return e2; } // Added const version
     int& width(){return e1;}
     int& height(){return e2;}
     bool operator==(const Vec2& other){
